@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  width: 100px;
+  background-color: bisque;
+}
+
+.profile {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(243, 109, 7);
+}
+
+.right-content {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  background-color: bisque;
+}
