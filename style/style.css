@@ -4,18 +4,179 @@
   box-sizing: border-box;
 }
 
+body {
+  background: #fafafa url(../Assets/image/bg.280cef1c.png);
+  font-family: Roboto, sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
 .container {
-  display: flex;
-  width: 100px;
-  background-color: bisque;
+  margin-top: 60px;
 }
 
+/* ---------------- Profile ----------------------- */
 .profile {
-  width: 100px;
-  height: 100px;
-  background-color: rgb(243, 109, 7);
+  background: #fff;
+  border-radius: 6px;
+  width: 100%;
+  display: inline-block;
+  box-shadow: 0 2px 92px #00000012;
 }
 
+.profile-name {
+  padding: 20px;
+  line-height: 18px;
+}
+
+.profile .name {
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 650;
+}
+
+.profile .job {
+  color: #777;
+  font-size: 13px;
+}
+
+.profile-image {
+  clip-path: polygon(0% 9%, 100% 0, 100% 94%, 0% 100%);
+  margin-top: -18px;
+}
+
+.profile-image img {
+  width: 100%;
+}
+
+.profile-information {
+  margin: 8px 0 8px 5px;
+  list-style: none;
+}
+
+.profile-information li:first-child:before {
+  background: #ffc500;
+}
+
+.profile-information li:first-child:after {
+  content: "";
+  background: url(../../assets/image/glasses.3e8381e1.png) 0 0 / 27px 10px
+    no-repeat;
+  width: 30px;  
+  height: 10px;
+  margin: 16px -15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+ul.profile-information li:before {
+  border-color: #ffb100;
+}
+
+.profile-information li:first-child {
+  padding-bottom: 10px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.profile-information li {
+  color: #787878;
+  border-left: 2px solid #eee;
+  padding: 0 0 23px 20px;
+  font-size: 14px;
+  list-style: none;
+}
+
+.profile-information li:last-child {
+  border-left: none;
+  margin-left: 2px;
+  margin-bottom: 2px;
+}
+
+.profile-information li:first-child:before {
+  border: 0;
+  width: 40px;
+  height: 40px; 
+  margin-top: -30px;
+  margin-bottom: 20px;
+  margin-left: -51px;
+  padding: 11px 14px;
+  position: relative;
+  box-shadow: 0 2px 32px #047bf84d;
+}
+
+.profile-information li:before {
+  content: "";
+  background: #fff;
+  border: 2px solid;
+  border-radius: 50px;
+  width: 8px;
+  height: 8px;  
+  margin-top: 2px;
+  margin-left: -25px;
+  font-size: 8px;
+  font-weight: 400;
+  display: block;
+  position: absolute;
+}
+
+.profile-information li p {
+  color: #7f7f7f;
+  font-size: 13.5px;
+  line-height: 12px;
+  margin: 0;
+}
+
+.profile-information li span {
+  color: #000 !important;
+  font-weight: 400;
+}
+
+/* css button down load */
+.profile .site-btn {
+  margin: 18px auto 30px;
+  display: block;
+}
+
+.site-btn {
+  border: none;
+  border-radius: 50px;
+  padding: 1px 29px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 35px;
+}
+
+.site-btn {
+  background: #ffc500;
+}
+
+.site-btn.icon {
+  text-align: left;
+  padding: 1px 6px 1px 19px;
+  background: #ffc500;
+}
+
+.site-btn.icon i {
+  color: #000;
+  float: right;
+  text-align: center;
+  background: #fff;
+  border-radius: 50px;
+  width: 27px;
+  height: 27px;
+  margin-top: 4px;
+  margin-left: 15px;
+  font-size: 11px;
+  line-height: 29px;
+}
+
+.profile .site-btn:hover {
+  background-color: #ffb100;
+}
+
+/* ----------------------------------------- */
 .right-content {
   display: flex;
   width: 100px;
