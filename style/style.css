@@ -79,14 +79,17 @@ a {
   list-style: none;
 }
 
-.profile-information li:first-child:before {
+.profile-information li:first-child::after {
+  background: url(../../assets/image/glasses.3e8381e1.png) 0 0 / 27px 10px
+  no-repeat;
+}
+
+.vertical-list li:first-child:before {
   background: #ffc500;
 }
 
-.profile-information li:first-child:after {
+.vertical-list li:first-child:after {
   content: "";
-  background: url(../../assets/image/glasses.3e8381e1.png) 0 0 / 27px 10px
-    no-repeat;
   width: 30px;  
   height: 10px;
   margin: 16px -15px;
@@ -95,17 +98,13 @@ a {
   left: 0;
 }
 
-ul.profile-information li:before {
-  border-color: #ffb100;
-}
-
-.profile-information li:first-child {
+.vertical-list li:first-child {
   padding-bottom: 10px;
   padding-left: 30px;
   position: relative;
 }
 
-.profile-information li {
+.vertical-list li {
   color: #787878;
   border-left: 2px solid #eee;
   padding: 0 0 23px 20px;
@@ -113,13 +112,13 @@ ul.profile-information li:before {
   list-style: none;
 }
 
-.profile-information li:last-child {
+.vertical-list li:last-child {
   border-left: none;
   margin-left: 2px;
   margin-bottom: 2px;
 }
 
-.profile-information li:first-child:before {
+.vertical-list li:first-child:before {
   border: 0;
   width: 40px;
   height: 40px; 
@@ -131,7 +130,7 @@ ul.profile-information li:before {
   box-shadow: 0 2px 32px #047bf84d;
 }
 
-.profile-information li:before {
+.vertical-list li:before {
   content: "";
   background: #fff;
   border: 2px solid;
@@ -144,16 +143,17 @@ ul.profile-information li:before {
   font-weight: 400;
   display: block;
   position: absolute;
+  border-color: #ffb100;
 }
 
-.profile-information li p {
+.vertical-list li p {
   color: #7f7f7f;
   font-size: 13.5px;
   line-height: 12px;
   margin: 0;
 }
 
-.profile-information li span {
+.vertical-list li span {
   color: #000 !important;
   font-weight: 400;
 }
