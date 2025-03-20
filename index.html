@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/home.css">
     <link rel="stylesheet" href="./style/blog.css">
+    <link rel="stylesheet" href="./style/contact.css">
 </head>
 
 <body>
@@ -105,7 +106,7 @@
                     <div id="content" class="panel-container">
 
                         <!-- HOME -->
-                        <!-- <div id="home" class="visible" class="page-active">
+                        <div id="home" class="visible" class="page-active">
                                 <div class="row">
                                     <section class="about-me col-md-12">
                                         <div class="section-title">
@@ -243,11 +244,11 @@
                                         </ul>
                                     </section>
                                 </div>
-                            </div> -->
+                            </div>
                         <!-- END HOME -->
 
                         <!-- RESUME -->
-                        <!-- <div id="resume" class="visible">
+                        <div id="resume" class="visible">
                             <div class="row" style="margin-left: 15px;">
                                 <section class="resume">
                                     <div class="section-title">
@@ -435,11 +436,11 @@
                                     </div>
                                 </section>
                             </div>
-                        </div> -->
+                        </div>
                         <!-- END RESUME -->
 
                         <!-- PORTFOLIO -->
-                        <!-- <div id="portfolio" class="visible">
+                        <div id="portfolio" class="visible">
                             <div class="row">
                                 <section class="col-md-12">
                                     <div class="section-title">
@@ -589,7 +590,7 @@
                                     </div>
                                 </section>
                             </div>
-                        </div> -->
+                        </div>
                         <!-- END PORTFOLIO -->
 
                         <!-- BLOG -->
@@ -703,6 +704,76 @@
                         </div>
                         <!-- END BLOG -->
 
+
+                        <!-- CONTACT -->
+                        <div id="contact" class="visible">
+                            <section class="col-md-12 row">
+                                <div class="col-md-6">
+                                    <div class="section-title">
+                                        <h2>Contact Form</h2>
+                                    </div>
+
+                                    <form class="contact-form">
+                                        <div class="row">
+                                          <div class="col-md-6">
+                                            <input class="contact-form-input name" placeholder="Name" type="text" id="name" />
+                                          </div>
+                                          <div class="col-md-6">
+                                            <input class="contact-form-input email" placeholder="E-mail" type="email" id="email" />
+                                          </div>
+                                          <div class="col-md-12">
+                                            <textarea
+                                              class="contact-form-area message"
+                                              placeholder="Message"
+                                              id="message"
+                                            ></textarea>
+                                          </div>
+                                          <div class="">
+                                            <button class="site-btn" type="submit">
+                                              Submit
+                                            </button>
+                                          </div>
+                                        </div>
+                                      </form>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="section-title">
+                                        <h2>
+                                            Contact Informations
+                                        </h2>
+                                    </div>
+                                    <div class="contact-information">
+                                        <ul>
+                                            <li>
+                                              <p><span>Address:</span> 107727 Santa Monica Boulevard
+                                                Los Angeles</p>
+                                            </li>
+                                            <li><p><span>Phone:</span> +38 012-3456-7890</p></li>
+                                            <li><p><span>Job:</span> Freelancer</p></li>
+                                            <li><p><span>E-mail:</span> chris@domain.com</p></li>
+                                            <li><p><span>Skype:</span> chrisjohnson85</p></li>
+                                            <li>
+                                                <div class="hidden-md social-icons">
+                                                    <a href="" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                                                    <a href="" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+                                                    <a href="" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+                                                    <a href="" class="dribbble"><i class="fa-brands fa-dribbble"></i></a>
+                                                </div>
+                                            </li>
+                                          </ul>
+                                    </div>
+                                </div>
+                                <div class="contact-map">
+                                    <div class="section-title">
+                                        <h2>
+                                            Contact Map
+                                        </h2>
+                                    </div>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.27405770525!2d-118.69192047471653!3d34.02016130939095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20California%2C%20Hoa%20K%E1%BB%B3!5e0!3m2!1svi!2s!4v1646830593465!5m2!1svi!2s" allowfullscreen="" loading="lazy"></iframe>
+                                </div>
+                            </section>
+                        </div>
+                        <!-- END CONTACT -->
                     </div>
                 </main>
 
@@ -765,6 +836,49 @@
             $(this).addClass('active');
         });
 
+    </script>
+    <script>
+        $(document).ready(function() {
+            // Ẩn tất cả các tab content ngoại trừ tab đầu tiên
+            $("#content > div:not(:first)").hide();
+            
+            // Xử lý sự kiện click trên các tab
+            $('.tabs .tab-link').click(function(e) {
+                e.preventDefault();
+                
+                // Lấy target từ href
+                let target = $(this).attr('href');
+                
+                // Xóa class active khỏi tất cả các tab
+                $('.tabs .tab-link').removeClass('active');
+                
+                // Thêm class active vào tab được click
+                $(this).addClass('active');
+                
+                // Ẩn tất cả content
+                $('#content > div').hide();
+                
+                // Hiển thị content tương ứng với tab được chọn
+                $(target).fadeIn(600);
+            });
+
+            // Xử lý nút home
+            $('.home-btn').click(function(e) {
+                e.preventDefault();
+                
+                // Xóa class active khỏi tất cả các tab
+                $('.tabs .tab-link').removeClass('active');
+                
+                // Thêm class active vào home button
+                $(this).addClass('active');
+                
+                // Ẩn tất cả content
+                $('#content > div').hide();
+                
+                // Hiển thị home content
+                $('#home').fadeIn(600);
+            });
+        });
     </script>
 </body>
 
