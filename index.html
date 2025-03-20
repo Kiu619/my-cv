@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./style/portfolio.css">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/home.css">
+    <link rel="stylesheet" href="./style/blog.css">
 </head>
 
 <body>
@@ -438,7 +439,7 @@
                         <!-- END RESUME -->
 
                         <!-- PORTFOLIO -->
-                        <div id="portfolio" class="visible">
+                        <!-- <div id="portfolio" class="visible">
                             <div class="row">
                                 <section class="col-md-12">
                                     <div class="section-title">
@@ -588,8 +589,119 @@
                                     </div>
                                 </section>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- END PORTFOLIO -->
+
+                        <!-- BLOG -->
+                        <div id="blog" class="visible">
+                            <div class="row">
+                                <section class="col-md-12">
+                                    <div class="section-title">
+                                        <h2>Blog Posts</h2>
+                                    </div>
+
+                                    <div class="row blog-posts">
+                                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                            <div class="blog-post">
+                                                <a class="post-link" href="">
+                                                    <img src="assets/image/blog-6.c9c9e820.jpg" alt="Babel Admin Html Code">
+                                                    <div class="post-content">
+                                                        <span class="post-category">General</span>
+                                                        <h3 class="post-title">See my current workspace</h3>
+                                                        <p class="post-description">The first thing to remember about success
+                                                            is that it is a process.</p>
+                                                        <span class="date">8 Nov 25</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                            <div class="blog-post">
+                                                <a class="post-link" href="">
+                                                    <img src="assets/image/blog-2.f9dc025a.jpg" alt="Web Design Tips">
+                                                    <div class="post-content">
+                                                        <span class="post-category">Web Design</span>
+                                                        <h3 class="post-title">How to become a web designer?</h3>
+                                                        <p class="post-description">He must have tried it a hundred times,
+                                                            shut his eyes so that he wouldn't have to
+                                                            look at the floundering.</p>
+                                                        <span class="date">5 Nov 25</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                            <div class="blog-post">
+                                                <a class="post-link" href="">
+                                                    <img src="assets/image/blog-4.dfc7c2c3.jpg" alt="Creative Process">
+                                                    <div class="post-content">
+                                                        <span class="post-category">User İnterface</span>
+                                                        <h3 class="post-title">Why is it better to work nights?</h3>
+                                                        <p class="post-description">Legs, and only stopped when he began to
+                                                            feel a mild, dull pain there that he had
+                                                            never felt.</p>
+                                                        <span class="date">2 Nov 25</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                            <div class="blog-post">
+                                                <a class="post-link" href="">
+                                                    <img src="assets/image/blog-5.03fcecf8.jpg" alt="Mobile Design">
+                                                    <div class="post-content">
+                                                        <span class="post-category">Photography</span>
+                                                        <h3 class="post-title">Can you work everywhere?</h3>
+                                                        <p class="post-description">Drops of rain could be heard hitting the
+                                                            pane, which made him feel quite sad..</p>
+                                                        <span class="date">1 Nov 25</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                            <div class="blog-post">
+                                                <a class="post-link" href="">
+                                                    <img src="assets/image/blog-6.c9c9e820.jpg" alt="UI Design">
+                                                    <div class="post-content">
+                                                        <span class="post-category">Other</span>
+                                                        <h3 class="post-title">How to connect your imac or macBook</h3>
+                                                        <p class="post-description">However hard he threw himself onto his
+                                                            right, he always rolled back to where he
+                                                            was.</p>
+                                                        <span class="date">29 Oct 25</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                                            <div class="blog-post">
+                                                <a class="post-link" href="">
+                                                    <img src="assets/image/blog-2.f9dc025a.jpg" alt="Workspace Setup">
+                                                    <div class="post-content">
+                                                        <span class="post-category">Workspace</span>
+                                                        <h3 class="post-title">I'm starting a new project</h3>
+                                                        <p class="post-description">The first thing to remember about success
+                                                            is that it is a process...</p>
+                                                        <span class="date">25 Oct 25</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-center mt-4 mb-4">
+                                        <button class="site-btn">Load More (3)</button>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <!-- END BLOG -->
 
                     </div>
                 </main>
@@ -634,23 +746,25 @@
                     }
                 }
             });
-
-            // Portfolio Isotope
-            var $grid = $('.portfolio-grid').isotope({
-                itemSelector: '.portfolio-item',
-                layoutMode: 'fitRows'
-            });
-
-            // Filter items on button click
-            $('.portfolio-filters ul').on('click', 'li', function () {
-                var filterValue = $(this).attr('data-filter');
-                $grid.isotope({ filter: filterValue });
-
-                // Add active class
-                $('.portfolio-filters ul li').removeClass('active');
-                $(this).addClass('active');
-            });
         });
+    </script>
+    <script>
+        // Portfolio Isotope
+        let $grid = $('.portfolio-grid').isotope({
+            itemSelector: '.portfolio-item',
+            layoutMode: 'fitRows'
+        });
+
+        // Filter items on button click
+        $('.portfolio-filters ul').on('click', 'li', function () {
+            let filterValue = $(this).attr('data-filter');
+            $grid.isotope({ filter: filterValue });
+
+            // Add active class
+            $('.portfolio-filters ul li').removeClass('active');
+            $(this).addClass('active');
+        });
+
     </script>
 </body>
 
