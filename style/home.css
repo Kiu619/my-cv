@@ -57,7 +57,7 @@ section {
   font-size: 12px;
 }
 .percentage {
-  background: #ffc500;
+  background: var(--primary-color);
 }
 .skill-list .progress .percentage {
   border-radius: 50px 0 0 50px;

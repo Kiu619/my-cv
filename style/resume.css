@@ -32,7 +32,7 @@
     top: 0;
     width: 8px;
     height: 8px;
-    border: 3px solid #ffc500;
+    border: 3px solid var(--primary-color);
     border-radius: 50%;
     background: white;
     z-index: 1;
@@ -62,7 +62,7 @@
     text-align: center;
     line-height: 50px;
     border-radius: 50%;
-    background: #ffc500;
+    background: var(--primary-color);
     box-shadow: 0 2px 32px rgba(4, 123, 248, 0.3);
     z-index: 2;
 }
@@ -214,5 +214,5 @@
 }
 
 .owl-dot.active span {
-  background: #ffc500 !important;
+  background: var(--primary-color) !important;
 }

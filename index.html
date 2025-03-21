@@ -20,6 +20,29 @@
 </head>
 
 <body>
+    <div class="select-color-wrapper" >
+        <div class="settings"><i class="fa fa-cog fa-spin"></i></div>
+        <div class="select-color">
+            <h5>SELECT A COLOR</h5>
+          <hr>
+          <div class="row row-cols-5 g-2 justify-content-center">
+            <div class="col"><a href="#" class="color" style="background-color: #ffb100;"></a></div>
+            <div class="col"><a href="#" class="color" style="background-color: #52bf00;"></a></div>
+            <div class="col"><a href="#" class="color" style="background-color: #d81300;"></a></div>
+            <div class="col"><a href="#" class="color" style="background-color: #425cbb;"></a></div>
+            <div class="col"><a href="#" class="color" style="background-color: #bf55ec;"></a></div>
+            
+            <div class="col"><a href="#" class="color" style="background-color: #00b4d9;"></a></div>
+            <div class="col"><a href="#" class="color" style="background-color: #029a83;"></a></div>
+            <div class="col"><a href="#" class="color" style="background-color: #f62459;"></a></div>
+            <div class="col"><a href="#" class="color" style="background-color: #ff5a14;"></a></div>
+            <div class="col"><a href="#" class="color" style="background-color: #abb7b7;"></a></div>
+        </div>
+          <hr />
+          <a href="#" class="reset btn btn-sm btn-info p-l-30 p-r-30">Reset</a>
+        </div>
+    </div>
+
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-4">
@@ -52,7 +75,7 @@
                     </ul>
                     <div class="col-md-12">
                         <button class="icon site-btn pointer">
-                            Download Cv
+                            Download CV
                             <i class="fa-solid fa-download"></i>
                         </button>
                     </div>
@@ -60,191 +83,219 @@
             </div>
 
             <div class="col-lg-9 col-md-8  right-content">
-                <header class="col-md-12">
-                    <nav>
-                        <div class="row">
-                            <div class="col-md-8 col-sm-8 col-xs-4 pr-0">
-                                <ul class="tabs">
-                                    <li class="tab">
-                                        <a class="home-btn active" href="#home" style="display: block;"><i
-                                                class="fa fa-home"></i></a>
-                                    </li>
-                                    <li class="tab">
-                                        <a class="tab-link" href="#resume">RESUME</a>
-                                    </li>
-                                    <li class="tab">
-                                        <a class="tab-link" href="#portfolio">PORTFOLIO</a>
-                                    </li>
-                                    <li class="tab">
-                                        <a class="tab-link" href="#blog">BLOG</a>
-                                    </li>
-                                    <li class="tab">
-                                        <a class="tab-link" href="#contact">CONTACT</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-md-4 col-sm-4 col-xs-8 dynamic nav-right">
-                                <div class="hidden-md social-icons">
-                                    <a href="" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="" class="twitter"><i class="fa-brands fa-twitter"></i></a>
-                                    <a href="" class="instagram"><i class="fa-brands fa-instagram"></i></a>
-                                    <a href="" class="dribbble"><i class="fa-brands fa-dribbble"></i></a>
-                                </div>
-                                <a href="mailto:hi@tavonline.net" class="hidden-xs icon site-btn">
-                                    Hire Me
-                                    <i class="fa-solid fa-paper-plane"></i>
+                <header class="desktop-device">
+                    <div class="nav-left">
+                        <ul class="tabs">
+                            <li class="tab">
+                                <a class="home-btn active tab-link" href="#home" style="display: block;"><i
+                                        class="fa fa-home"></i>
                                 </a>
-                                <!-- <div id="bars" class="hamburger hidden-lg hidden-md">
-                                        <i class="fa-solid fa-bars"></i>
-                                    </div> -->
-                            </div>
+                            </li>
+                            <li class="tab">
+                                <a class="tab-link" href="#resume">RESUME</a>
+                            </li>
+                            <li class="tab">
+                                <a class="tab-link" href="#portfolio">PORTFOLIO</a>
+                            </li>
+                            <li class="tab">
+                                <a class="tab-link" href="#blog">BLOG</a>
+                            </li>
+                            <li class="tab">
+                                <a class="tab-link" href="#contact">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class=" nav-right">
+                        <div class="hidden social-icons">
+                            <a href="" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="" class="dribbble"><i class="fa-brands fa-dribbble"></i></a>
                         </div>
-                    </nav>
+                        <a href="mailto:hi@tavonline.net" class="hidden-xs icon site-btn">
+                            Hire Me
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </a>
+                        <div id="bars" class="">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
                 </header>
+
+                <!-- Mobile Menu -->
+                <header class="mobile-menu">
+                    <ul class="tabs">
+                        <li class="tab">
+                            <a class="tab-link" href="#resume">RESUME</a>
+                        </li>
+                        <li class="tab">
+                            <a class="tab-link" href="#portfolio">PORTFOLIO</a>
+                        </li>
+                        <li class="tab">
+                            <a class="tab-link" href="#blog">BLOG</a>
+                        </li>
+                        <li class="tab">
+                            <a class="tab-link" href="#contact">CONTACT</a>
+                        </li>
+                    </ul>
+                    <div class="nav-right">
+                        <a href="mailto:hi@tavonline.net" class="icon site-btn">
+                            Hire Me
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </a>
+                        <div class="social-icons">
+                            <a href="" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="" class="dribbble"><i class="fa-brands fa-dribbble"></i></a>
+                        </div>
+                    </div>
+                </header>
+                <div class="overlay"></div>
 
                 <main class="col-md-12 nav-position">
                     <div id="content" class="panel-container">
 
                         <!-- HOME -->
                         <div id="home" class="visible" class="page-active">
-                                <div class="row">
-                                    <section class="about-me col-md-12">
-                                        <div class="section-title">
-                                            <h2>About Me</h2>
-                                        </div>
-                                        <p>
-                                            Started earnest brother believe an exposed so. Me he
-                                            believing daughters if forfeited at furniture. Age again
-                                            and stuff downs spoke. Late hour new nay able fat each
-                                            sell. Nor themselves age introduced frequently use
-                                            unsatiable devonshire get. They why quit gay cold rose
-                                            deal park. One same they four did ask busy. Reserved
-                                            opinions fat him nay position. Breakfast as zealously
-                                            incommode do agreeable furniture. One too nay led fanny
-                                            allow plate. <br />
-                                            <br />
-                                            Quick six blind smart out burst. Perfectly on furniture
-                                            dejection determine my depending an to. Add short water
-                                            court fat. Her bachelor honoured perceive securing but
-                                            desirous ham required. Questions deficient acuteness to
-                                            engrossed as. Entirely led ten humoured greatest and
-                                            yourself. Besides ye country on observe. She continue
-                                            appetite endeavor she judgment interest the met. For she
-                                            surrounded motionless fat resolution may.
-                                        </p>
-                                    </section>
-                                </div>
-                                <div class="row">
-                                    <section class="col-md-12 graybg line my-services">
-                                        <div class="section-title" style="padding-top: 40px;">
-                                            <span></span>
-                                            <h2>My Services</h2>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                                                <div class="service">
-                                                    <div class="icon">
-                                                        <img src="./Assets/icons/browser-coding.svg" alt="">
-                                                    </div>
-                                                    <span class="title">Web Development</span>
-                                                    <p class="little-text">
-                                                        I have been working on web design for 10 years.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                                                <div class="service">
-                                                    <div class="icon">
-                                                        <img src="./Assets/icons/attach.svg" alt="">
-                                                    </div>
-                                                    <span class="title">Branding Identity</span>
-                                                    <p class="little-text">
-                                                        We will make you a brand that is catchy and leaves
-                                                        a trace.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                                                <div class="service">
-                                                    <div class="icon">
-                                                        <img src="./Assets/icons/vector-pen.svg" alt="">
-                                                    </div>
-                                                    <span class="title">Illustrator</span>
-                                                    <p class="little-text">
-                                                        I have been working on illustration design for 6
-                                                        years.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                                                <div class="service">
-                                                    <div class="icon">
-                                                        <img src="./Assets/icons/schedule-calendar.svg" alt="">
-                                                    </div>
-                                                    <span class="title">Fast Delivery</span>
-                                                    <p class="little-text">
-                                                        I deliver your business as fast as possible.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </section>
-                                </div>
-                                <div class="row">
-                                    <section class="col-md-6 design-skills">
-                                        <div class="bottom_45 section-title">
-                                            <span></span>
-                                            <h2>Design Skills</h2>
-                                        </div>
-                                        <ul class="skill-list pl-0">
-                                            <li>
-                                                <h3>Photoshop</h3>
-                                                <div class="progress">
-                                                    <div class="percentage" style="width: 80% "></div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <h3>Sketch</h3>
-                                                <div class="progress">
-                                                    <div class="percentage" style="width: 60%"></div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <h3>Adobe Xd</h3>
-                                                <div class="progress">
-                                                    <div class="percentage" style="width: 30%"></div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </section>
-                                    <section class="code-skills col-md-6 padding_60">
-                                        <div class="bottom_45 section-title">
-                                            <span></span>
-                                            <h2>Code Skills</h2>
-                                        </div>
-                                        <ul class="skill-list pl-0">
-                                            <li>
-                                                <h3>Javascript</h3>
-                                                <div class="progress">
-                                                    <div class="percentage" style="width: 80%"></div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <h3>HTML5</h3>
-                                                <div class="progress">
-                                                    <div class="percentage" style="width: 60%"></div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <h3>CSS3</h3>
-                                                <div class="progress">
-                                                    <div class="percentage" style="width: 30%"></div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </section>
-                                </div>
+                            <div class="row">
+                                <section class="about-me col-md-12">
+                                    <div class="section-title">
+                                        <h2>About Me</h2>
+                                    </div>
+                                    <p>
+                                        Started earnest brother believe an exposed so. Me he
+                                        believing daughters if forfeited at furniture. Age again
+                                        and stuff downs spoke. Late hour new nay able fat each
+                                        sell. Nor themselves age introduced frequently use
+                                        unsatiable devonshire get. They why quit gay cold rose
+                                        deal park. One same they four did ask busy. Reserved
+                                        opinions fat him nay position. Breakfast as zealously
+                                        incommode do agreeable furniture. One too nay led fanny
+                                        allow plate. <br />
+                                        <br />
+                                        Quick six blind smart out burst. Perfectly on furniture
+                                        dejection determine my depending an to. Add short water
+                                        court fat. Her bachelor honoured perceive securing but
+                                        desirous ham required. Questions deficient acuteness to
+                                        engrossed as. Entirely led ten humoured greatest and
+                                        yourself. Besides ye country on observe. She continue
+                                        appetite endeavor she judgment interest the met. For she
+                                        surrounded motionless fat resolution may.
+                                    </p>
+                                </section>
                             </div>
+                            <div class="row">
+                                <section class="col-md-12 graybg line my-services">
+                                    <div class="section-title" style="padding-top: 40px;">
+                                        <span></span>
+                                        <h2>My Services</h2>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                            <div class="service">
+                                                <div class="icon">
+                                                    <img src="./Assets/icons/browser-coding.svg" alt="">
+                                                </div>
+                                                <span class="title">Web Development</span>
+                                                <p class="little-text">
+                                                    I have been working on web design for 10 years.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                            <div class="service">
+                                                <div class="icon">
+                                                    <img src="./Assets/icons/attach.svg" alt="">
+                                                </div>
+                                                <span class="title">Branding Identity</span>
+                                                <p class="little-text">
+                                                    We will make you a brand that is catchy and leaves
+                                                    a trace.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                            <div class="service">
+                                                <div class="icon">
+                                                    <img src="./Assets/icons/vector-pen.svg" alt="">
+                                                </div>
+                                                <span class="title">Illustrator</span>
+                                                <p class="little-text">
+                                                    I have been working on illustration design for 6
+                                                    years.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                            <div class="service">
+                                                <div class="icon">
+                                                    <img src="./Assets/icons/schedule-calendar.svg" alt="">
+                                                </div>
+                                                <span class="title">Fast Delivery</span>
+                                                <p class="little-text">
+                                                    I deliver your business as fast as possible.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="row">
+                                <section class="col-md-6 design-skills">
+                                    <div class="bottom_45 section-title">
+                                        <span></span>
+                                        <h2>Design Skills</h2>
+                                    </div>
+                                    <ul class="skill-list pl-0">
+                                        <li>
+                                            <h3>Photoshop</h3>
+                                            <div class="progress">
+                                                <div class="percentage" style="width: 80% "></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <h3>Sketch</h3>
+                                            <div class="progress">
+                                                <div class="percentage" style="width: 60%"></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <h3>Adobe Xd</h3>
+                                            <div class="progress">
+                                                <div class="percentage" style="width: 30%"></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </section>
+                                <section class="code-skills col-md-6 padding_60">
+                                    <div class="bottom_45 section-title">
+                                        <span></span>
+                                        <h2>Code Skills</h2>
+                                    </div>
+                                    <ul class="skill-list pl-0">
+                                        <li>
+                                            <h3>Javascript</h3>
+                                            <div class="progress">
+                                                <div class="percentage" style="width: 80%"></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <h3>HTML5</h3>
+                                            <div class="progress">
+                                                <div class="percentage" style="width: 60%"></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <h3>CSS3</h3>
+                                            <div class="progress">
+                                                <div class="percentage" style="width: 30%"></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
                         <!-- END HOME -->
 
                         <!-- RESUME -->
@@ -349,7 +400,7 @@
                                 </section>
                             </div>
 
-                            
+
                             <div class="row">
                                 <section class="col-md-12">
                                     <div class="section-title">
@@ -605,11 +656,13 @@
                                         <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                                             <div class="blog-post">
                                                 <a class="post-link" href="">
-                                                    <img src="assets/image/blog-6.c9c9e820.jpg" alt="Babel Admin Html Code">
+                                                    <img src="assets/image/blog-6.c9c9e820.jpg"
+                                                        alt="Babel Admin Html Code">
                                                     <div class="post-content">
                                                         <span class="post-category">General</span>
                                                         <h3 class="post-title">See my current workspace</h3>
-                                                        <p class="post-description">The first thing to remember about success
+                                                        <p class="post-description">The first thing to remember about
+                                                            success
                                                             is that it is a process.</p>
                                                         <span class="date">8 Nov 25</span>
                                                     </div>
@@ -624,7 +677,8 @@
                                                     <div class="post-content">
                                                         <span class="post-category">Web Design</span>
                                                         <h3 class="post-title">How to become a web designer?</h3>
-                                                        <p class="post-description">He must have tried it a hundred times,
+                                                        <p class="post-description">He must have tried it a hundred
+                                                            times,
                                                             shut his eyes so that he wouldn't have to
                                                             look at the floundering.</p>
                                                         <span class="date">5 Nov 25</span>
@@ -640,7 +694,8 @@
                                                     <div class="post-content">
                                                         <span class="post-category">User İnterface</span>
                                                         <h3 class="post-title">Why is it better to work nights?</h3>
-                                                        <p class="post-description">Legs, and only stopped when he began to
+                                                        <p class="post-description">Legs, and only stopped when he began
+                                                            to
                                                             feel a mild, dull pain there that he had
                                                             never felt.</p>
                                                         <span class="date">2 Nov 25</span>
@@ -656,7 +711,8 @@
                                                     <div class="post-content">
                                                         <span class="post-category">Photography</span>
                                                         <h3 class="post-title">Can you work everywhere?</h3>
-                                                        <p class="post-description">Drops of rain could be heard hitting the
+                                                        <p class="post-description">Drops of rain could be heard hitting
+                                                            the
                                                             pane, which made him feel quite sad..</p>
                                                         <span class="date">1 Nov 25</span>
                                                     </div>
@@ -671,7 +727,8 @@
                                                     <div class="post-content">
                                                         <span class="post-category">Other</span>
                                                         <h3 class="post-title">How to connect your imac or macBook</h3>
-                                                        <p class="post-description">However hard he threw himself onto his
+                                                        <p class="post-description">However hard he threw himself onto
+                                                            his
                                                             right, he always rolled back to where he
                                                             was.</p>
                                                         <span class="date">29 Oct 25</span>
@@ -687,7 +744,8 @@
                                                     <div class="post-content">
                                                         <span class="post-category">Workspace</span>
                                                         <h3 class="post-title">I'm starting a new project</h3>
-                                                        <p class="post-description">The first thing to remember about success
+                                                        <p class="post-description">The first thing to remember about
+                                                            success
                                                             is that it is a process...</p>
                                                         <span class="date">25 Oct 25</span>
                                                     </div>
@@ -715,26 +773,25 @@
 
                                     <form class="contact-form">
                                         <div class="row">
-                                          <div class="col-md-6">
-                                            <input class="contact-form-input name" placeholder="Name" type="text" id="name" />
-                                          </div>
-                                          <div class="col-md-6">
-                                            <input class="contact-form-input email" placeholder="E-mail" type="email" id="email" />
-                                          </div>
-                                          <div class="col-md-12">
-                                            <textarea
-                                              class="contact-form-area message"
-                                              placeholder="Message"
-                                              id="message"
-                                            ></textarea>
-                                          </div>
-                                          <div class="">
-                                            <button class="site-btn" type="submit">
-                                              Submit
-                                            </button>
-                                          </div>
+                                            <div class="col-md-6">
+                                                <input class="contact-form-input name" placeholder="Name" type="text"
+                                                    id="name" />
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input class="contact-form-input email" placeholder="E-mail"
+                                                    type="email" id="email" />
+                                            </div>
+                                            <div class="col-md-12">
+                                                <textarea class="contact-form-area message" placeholder="Message"
+                                                    id="message"></textarea>
+                                            </div>
+                                            <div class="">
+                                                <button class="site-btn" type="submit">
+                                                    Submit
+                                                </button>
+                                            </div>
                                         </div>
-                                      </form>
+                                    </form>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="section-title">
@@ -745,22 +802,33 @@
                                     <div class="contact-information">
                                         <ul>
                                             <li>
-                                              <p><span>Address:</span> 107727 Santa Monica Boulevard
-                                                Los Angeles</p>
+                                                <p><span>Address:</span> 107727 Santa Monica Boulevard
+                                                    Los Angeles</p>
                                             </li>
-                                            <li><p><span>Phone:</span> +38 012-3456-7890</p></li>
-                                            <li><p><span>Job:</span> Freelancer</p></li>
-                                            <li><p><span>E-mail:</span> chris@domain.com</p></li>
-                                            <li><p><span>Skype:</span> chrisjohnson85</p></li>
+                                            <li>
+                                                <p><span>Phone:</span> +38 012-3456-7890</p>
+                                            </li>
+                                            <li>
+                                                <p><span>Job:</span> Freelancer</p>
+                                            </li>
+                                            <li>
+                                                <p><span>E-mail:</span> chris@domain.com</p>
+                                            </li>
+                                            <li>
+                                                <p><span>Skype:</span> chrisjohnson85</p>
+                                            </li>
                                             <li>
                                                 <div class="hidden-md social-icons">
-                                                    <a href="" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                                                    <a href="" class="facebook"><i
+                                                            class="fa-brands fa-facebook-f"></i></a>
                                                     <a href="" class="twitter"><i class="fa-brands fa-twitter"></i></a>
-                                                    <a href="" class="instagram"><i class="fa-brands fa-instagram"></i></a>
-                                                    <a href="" class="dribbble"><i class="fa-brands fa-dribbble"></i></a>
+                                                    <a href="" class="instagram"><i
+                                                            class="fa-brands fa-instagram"></i></a>
+                                                    <a href="" class="dribbble"><i
+                                                            class="fa-brands fa-dribbble"></i></a>
                                                 </div>
                                             </li>
-                                          </ul>
+                                        </ul>
                                     </div>
                                 </div>
                                 <div class="contact-map">
@@ -769,7 +837,9 @@
                                             Contact Map
                                         </h2>
                                     </div>
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.27405770525!2d-118.69192047471653!3d34.02016130939095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20California%2C%20Hoa%20K%E1%BB%B3!5e0!3m2!1svi!2s!4v1646830593465!5m2!1svi!2s" allowfullscreen="" loading="lazy"></iframe>
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.27405770525!2d-118.69192047471653!3d34.02016130939095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20California%2C%20Hoa%20K%E1%BB%B3!5e0!3m2!1svi!2s!4v1646830593465!5m2!1svi!2s"
+                                        allowfullscreen="" loading="lazy"></iframe>
                                 </div>
                             </section>
                         </div>
@@ -838,45 +908,93 @@
 
     </script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             // Ẩn tất cả các tab content ngoại trừ tab đầu tiên
             $("#content > div:not(:first)").hide();
-            
+
             // Xử lý sự kiện click trên các tab
-            $('.tabs .tab-link').click(function(e) {
+            $('.tabs .tab-link').click(function (e) {
                 e.preventDefault();
-                
+
                 // Lấy target từ href
                 let target = $(this).attr('href');
-                
+
                 // Xóa class active khỏi tất cả các tab
                 $('.tabs .tab-link').removeClass('active');
-                
+
                 // Thêm class active vào tab được click
                 $(this).addClass('active');
-                
+
                 // Ẩn tất cả content
                 $('#content > div').hide();
-                
+
                 // Hiển thị content tương ứng với tab được chọn
                 $(target).fadeIn(600);
             });
 
             // Xử lý nút home
-            $('.home-btn').click(function(e) {
+            $('.home-btn').click(function (e) {
                 e.preventDefault();
-                
+
                 // Xóa class active khỏi tất cả các tab
                 $('.tabs .tab-link').removeClass('active');
-                
+
                 // Thêm class active vào home button
                 $(this).addClass('active');
-                
+
                 // Ẩn tất cả content
                 $('#content > div').hide();
-                
+
                 // Hiển thị home content
                 $('#home').fadeIn(600);
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            // Mobile menu
+            $('#bars').click(function() {
+                $('.mobile-menu').addClass('active');
+                $('.overlay').fadeIn();
+            });
+
+            // Đóng menu khi click vào overlay
+            $('.overlay').click(function() {
+                $('.mobile-menu').removeClass('active');
+                $('.overlay').fadeOut();
+            });
+
+            // Đóng menu khi click vào menu items
+            $('.mobile-menu .tab-link').click(function() {
+                $('.mobile-menu').removeClass('active');
+                $('.overlay').fadeOut();
+            });
+
+            // Select color
+            $('.select-color-wrapper .settings').click(function(e) {
+                e.preventDefault();
+                if ($('.select-color').css('left') === '0px') {
+                    $('.select-color').css('left', '-250px');
+                    $('.select-color-wrapper .settings').css('left', '0');
+                } else {
+                    $('.select-color').css('left', '0');
+                    $('.select-color-wrapper .settings').css('left', '250px');
+                }
+            });
+
+            // Change color when clicking on color options
+            $('.select-color .color').click(function(e) {
+                e.preventDefault();
+                let color = $(this).css('background-color');
+                document.documentElement.style.setProperty("--primary-color", color);
+            });
+
+
+            // Reset color
+            $('.select-color .reset').click(function(e) {
+                e.preventDefault();
+                $('.site-btn, .home-btn').css('background-color', 'var(--primary-color)');
+                $('.section-title h2::after').css('background-color', '#ffb100');
             });
         });
     </script>
