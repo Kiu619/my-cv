@@ -10,7 +10,7 @@
 
 
 body {
-  background: #fafafa url(../Assets/image/bg.280cef1c.png);
+  background: #fafafa url(../assets/image/bg.280cef1c.png);
   font-family: Roboto, sans-serif;
   position: relative;
   overflow-x: hidden;
@@ -90,7 +90,7 @@ a {
 }
 
 .profile-information li:first-child::after {
-  background: url(../../assets/image/glasses.3e8381e1.png) 0 0 / 27px 10px no-repeat;
+  background: url(../assets/image/glasses.3e8381e1.png) 0 0 / 27px 10px no-repeat;
 }
 
 .vertical-list li:first-child:before {
