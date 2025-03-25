@@ -22,16 +22,16 @@
     display: block;
 }
 
-.blog-post img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
+    .blog-post img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
 
-.blog-post:hover img {
-    transform: scale(1.1);
-}
+    .blog-post:hover img {
+        transform: scale(1.1);
+    }
 
 .post-content {
     padding: 20px;

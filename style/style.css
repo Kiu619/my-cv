@@ -350,11 +350,11 @@ header .site-btn {
 
 .section-title h2::after {
   content: "";
-  width: 100%;
+  width: 105%;
   height: 7px;
   background-color: var(--primary-color);
   bottom: 0;
-  left: 0;
+  left: -3px;
   display: block;
   opacity: 0.4;
   position: absolute;

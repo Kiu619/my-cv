@@ -870,21 +870,24 @@
                 items: 3,
                 loop: true,
                 margin: 30,
-                autoplay: true,
+                // autoplay: true,
                 autoplayTimeout: 5000,
                 reverse: true,
                 autoplayHoverPause: true,
                 dots: true,
                 responsive: {
+                    // 1000: {
+                    //     items: 3
+                    // },
                     0: {
                         items: 1
                     },
-                    768: {
-                        items: 1
-                    },
-                    992: {
+                    900: {
                         items: 2
-                    }
+                    },
+                    // 1000: {
+                    //     items: 2
+                    // }
                 }
             });
         });
@@ -993,8 +996,7 @@
             // Reset color
             $('.select-color .reset').click(function(e) {
                 e.preventDefault();
-                $('.site-btn, .home-btn').css('background-color', 'var(--primary-color)');
-                $('.section-title h2::after').css('background-color', '#ffb100');
+                document.documentElement.style.setProperty("--primary-color", "#ffb100");
             });
         });
     </script>
